@@ -2,15 +2,14 @@
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import api.Features;
 import gui.MainScreen;
 
 /*
  * Feature 1000 - protected App
  * 
- * Featura 1100 - Module 1
- * Featura 1200 - Module 2
- * Featura 1300 - Module 3
+ * Featura 1100 - Module 1 - verde
+ * Featura 1200 - Module 2 - azul
+ * Featura 1300 - Module 3 - vermelho
  * 
  * Featura 1310 - Function 1 in Module 3
  * Featura 1320 - Function 2 in Module 3
@@ -24,7 +23,6 @@ public class App {
         }
         Locale lang = getLang(args);
         boolean isAppProtected = getMode(args);
-        System.out.println(isAppProtected);
 
         // Features features = new Features();
         // boolean isFeature10Available = features.isFeatureAvailable("10");

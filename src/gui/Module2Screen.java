@@ -16,6 +16,7 @@ public class Module2Screen implements ActionListener {
     Locale lang;
     boolean isAppProtected;
     final String moduleFeature = "1200";
+    Color bg = new Color(153, 153, 255);
 
     public Module2Screen(Locale lang, boolean isAppProtected) throws Exception {
         this.lang = lang;
@@ -31,11 +32,13 @@ public class Module2Screen implements ActionListener {
         frame.setIconImage(new ImageIcon(imgURL).getImage());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(750, 200);
+        frame.getContentPane().setBackground(bg);
 
         JPanel p1 = new JPanel();
         BoxLayout boxlayout = new BoxLayout(p1, BoxLayout.Y_AXIS);
         p1.setLayout(boxlayout);
         p1.setBorder(new EmptyBorder(new Insets(10, 20, 0, 0)));
+        p1.setBackground(bg);
         Label l1 = new Label(bundle.getString("module2.title2"));
         l1.setFont(new Font("Serif", Font.BOLD + Font.PLAIN, 26));
         l1.setForeground(Color.red);
@@ -65,6 +68,7 @@ public class Module2Screen implements ActionListener {
         frame.getContentPane().add(p1, BorderLayout.NORTH);
 
         JPanel p3 = new JPanel();
+        p3.setBackground(bg);
         goBack = new JButton(bundle.getString("module2.button.back"));
         goBack.addActionListener(this);
         p3.add(goBack);

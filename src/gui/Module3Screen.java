@@ -25,6 +25,7 @@ public class Module3Screen implements ActionListener {
     final String function1Feature = "1310";
     final String function2Feature = "1300";
     Features features = new Features();
+    Color bg = new Color(255, 204, 128);
 
     public Module3Screen(Locale lang, boolean isAppProtected) throws Exception {
         this.lang = lang;
@@ -40,11 +41,13 @@ public class Module3Screen implements ActionListener {
         frame.setIconImage(new ImageIcon(imgURL).getImage());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(750, 200);
+        frame.getContentPane().setBackground(bg);
 
         JPanel p1 = new JPanel();
         BoxLayout boxlayout = new BoxLayout(p1, BoxLayout.Y_AXIS);
         p1.setLayout(boxlayout);
         p1.setBorder(new EmptyBorder(new Insets(10, 20, 0, 0)));
+        p1.setBackground(bg);
         Label l1 = new Label(bundle.getString("module3.title2"));
         l1.setFont(new Font("Serif", Font.BOLD + Font.PLAIN, 26));
         l1.setForeground(Color.red);
@@ -73,6 +76,7 @@ public class Module3Screen implements ActionListener {
         frame.getContentPane().add(p1, BorderLayout.NORTH);
 
         JPanel p3 = new JPanel();
+        p3.setBackground(bg);
         function1 = new JButton(bundle.getString("module3.button.function1"));
         function1.addActionListener(this);
         p3.add(function1);
