@@ -41,14 +41,80 @@ public class Features {
                     "  </feature>\n" +
                     "</haspformat>\n");
 
-    private Hasp hasp = new Hasp(Hasp.HASP_DEFAULT_FID);
+    private Hasp hasp;
 
     private int status;
+    public final long MODULE1 = 1100;
+    public final long MODULE2 = 1200;
+    public final long MODULE3 = 1300;
+    public final long FUNCTION31 = 1210;
+    public final long FUNCTION32 = 1320;
+
+    public Features(long feature) {
+        setHasp(new Hasp(feature));
+    }
 
     public Features() {
     }
 
+    public boolean login() {
+        System.out.println("login -------");
+        getHasp().login(getVendorcode());
+        int status = getHasp().getLastError();
+        if (status != HaspStatus.HASP_STATUS_OK) {
+            System.out.println("Error to login: " + status);
+            return false;
+        }
+        return true;
+    }
+
+    public void logout() {
+        System.out.println("logout -------");
+        getHasp().logout();
+        int status = getHasp().getLastError();
+        if (status != HaspStatus.HASP_STATUS_OK) {
+            System.out.println("Error to logout: " + status);
+            return;
+        }
+        return;
+    }
+
+
     public boolean isFeatureAvailable(final boolean isAppProtected, final String feature)
+            throws JDOMException, IOException {
+        if (isAppProtected == false)
+            return true;
+        boolean available = false;
+        String infos = getInfo(getScope1(), getView(), getVendorcode());
+        int status = getHasp().getLastError();
+        if (status != HaspStatus.HASP_STATUS_OK)
+            return available;
+
+        // parse xml
+        SAXBuilder saxBuilder = new SAXBuilder();
+        InputStream stream = new ByteArrayInputStream(infos.getBytes("UTF-8"));
+        Document document = saxBuilder.build(stream);
+
+        Element classElement = document.getRootElement();
+        List<Element> content = classElement.getChildren();
+        for (int i = 0; i < content.size(); i++) {
+            Element feat = content.get(i);
+            Attribute id = feat.getAttribute("id");
+            String featureValue = id.getValue();
+            Attribute usable = feat.getAttribute("usable");
+            String usableValue = usable.getValue();
+            if (featureValue.equals(feature)) {
+                if (usableValue.equals("true")) {
+                    available = true;
+                    break;
+                }
+            }
+        }
+
+        return available;
+    }
+
+    public boolean OLDisFeatureAvailable(final boolean isAppProtected, final String feature)
             throws JDOMException, IOException {
         if (isAppProtected == false)
             return true;

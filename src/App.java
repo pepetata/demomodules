@@ -4,25 +4,17 @@ import java.util.ResourceBundle;
 
 import gui.MainScreen;
 
-/*
- * Feature 1000 - protected App
- * 
- * Featura 1100 - Module 1 - verde
- * Featura 1200 - Module 2 - azul
- * Featura 1300 - Module 3 - vermelho
- * 
- * Featura 1310 - Function 1 in Module 3
- * Featura 1320 - Function 2 in Module 3
- */
 public class App {
     ResourceBundle bundle;
 
     public static void main(String[] args) throws Exception {
-        if (args.length < 2) {
-            usage();
-        }
-        Locale lang = getLang(args);
-        boolean isAppProtected = getMode(args);
+        // if (args.length < 2) {
+        //     usage();
+        // }
+        Locale lang = new Locale("us");
+        boolean isAppProtected = true;
+        // Locale lang = getLang(args);
+        // boolean isAppProtected = getMode(args);
 
         // Features features = new Features();
         // boolean isFeature10Available = features.isFeatureAvailable("10");

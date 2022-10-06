@@ -15,7 +15,8 @@ public class Module2Screen implements ActionListener {
     JButton goBack;
     Locale lang;
     boolean isAppProtected;
-    final String moduleFeature = "1200";
+    final long moduleFeature = 1200;
+    Features features = new Features(moduleFeature);
     Color bg = new Color(153, 153, 255);
 
     public Module2Screen(Locale lang, boolean isAppProtected) throws Exception {
@@ -26,6 +27,7 @@ public class Module2Screen implements ActionListener {
 
     private void prepareGUI() throws Exception {
         ResourceBundle bundle = ResourceBundle.getBundle("resources.messages", lang);
+        boolean isFeatureAvailable = features.login();
 
         String imgURL = "favicon-16x16.png";
         frame = new JFrame(bundle.getString("main.title"));
@@ -44,8 +46,6 @@ public class Module2Screen implements ActionListener {
         l1.setForeground(Color.red);
         p1.add(l1, BorderLayout.NORTH);
 
-        Features features = new Features();
-        boolean isFeatureAvailable = features.isFeatureAvailable(isAppProtected, moduleFeature);
         if (isFeatureAvailable == false) {
             Label l2 = new Label(bundle.getString("module.notavailable1"));
             l2.setFont(new Font("Serif", Font.BOLD + Font.PLAIN, 18));
@@ -79,6 +79,7 @@ public class Module2Screen implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        features.logout();
         frame.setVisible(false);
         new MainScreen(lang, isAppProtected);
 

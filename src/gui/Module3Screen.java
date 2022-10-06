@@ -21,10 +21,12 @@ public class Module3Screen implements ActionListener {
     JButton function2;
     Locale lang;
     boolean isAppProtected;
-    final String moduleFeature = "1300";
-    final String function1Feature = "1310";
-    final String function2Feature = "1300";
-    Features features = new Features();
+    final long moduleFeature = 1300;
+    final long function1Feature = 1310;
+    final long function2Feature = 1320;
+    Features features = new Features(moduleFeature);
+    Features featuresFuntion1 = new Features(function1Feature);
+    Features featuresFuntion2 = new Features(function2Feature);
     Color bg = new Color(255, 204, 128);
 
     public Module3Screen(Locale lang, boolean isAppProtected) throws Exception {
@@ -35,6 +37,7 @@ public class Module3Screen implements ActionListener {
 
     private void prepareGUI() throws JDOMException, IOException {
         bundle = ResourceBundle.getBundle("resources.messages", lang);
+        boolean isFeatureAvailable = features.login();
 
         String imgURL = "favicon-16x16.png";
         frame = new JFrame(bundle.getString("main.title"));
@@ -53,7 +56,6 @@ public class Module3Screen implements ActionListener {
         l1.setForeground(Color.red);
         p1.add(l1, BorderLayout.NORTH);
 
-        boolean isFeatureAvailable = features.isFeatureAvailable(isAppProtected, moduleFeature);
         if (isFeatureAvailable == false) {
             Label l2 = new Label(bundle.getString("module.notavailable1"));
             l2.setFont(new Font("Serif", Font.BOLD + Font.PLAIN, 18));
@@ -97,31 +99,36 @@ public class Module3Screen implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == goBack) {
+            features.logout();
             frame.setVisible(false);
             new MainScreen(lang, isAppProtected);
         }
         try {
             if (e.getSource() == function1) {
-                if (features.isFeatureAvailable(isAppProtected, function1Feature) == false)
+                if (featuresFuntion1.login() == false)
                     JOptionPane.showMessageDialog(frame, bundle.getString("module.function.notavailable1")
                             + bundle.getString("module.function.notavailable2"));
                 else if (isAppProtected)
                     JOptionPane.showMessageDialog(frame,
                             bundle.getString("module.function.available") + bundle.getString("module3.function1"));
-                else
+                else {
                     JOptionPane.showMessageDialog(frame, bundle.getString("module3.function1"));
+                    featuresFuntion1.logout();
+                }
             }
             if (e.getSource() == function2) {
-                if (features.isFeatureAvailable(isAppProtected, function2Feature) == false)
+                if (featuresFuntion2.login() == false)
                     JOptionPane.showMessageDialog(frame, bundle.getString("module.function.notavailable1")
                             + bundle.getString("module.function.notavailable2"));
                 else if (isAppProtected)
                     JOptionPane.showMessageDialog(frame,
                             bundle.getString("module.function.available") + bundle.getString("module3.function2"));
-                else
+                else {
                     JOptionPane.showMessageDialog(frame, bundle.getString("module3.function1"));
+                    featuresFuntion1.logout();
+                }
             }
-        } catch (HeadlessException | JDOMException | IOException e1) {
+        } catch (HeadlessException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
