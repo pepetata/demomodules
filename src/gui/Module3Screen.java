@@ -37,14 +37,21 @@ public class Module3Screen implements ActionListener {
 
     private void prepareGUI() throws JDOMException, IOException {
         bundle = ResourceBundle.getBundle("resources.messages", lang);
-        boolean isFeatureAvailable = features.login();
+        boolean isFeatureAvailable = isAppProtected ? features.login() : true;
 
         String imgURL = "favicon-16x16.png";
         frame = new JFrame(bundle.getString("main.title"));
         frame.setIconImage(new ImageIcon(imgURL).getImage());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(750, 200);
         frame.getContentPane().setBackground(bg);
+        // close module and go back to main if clicks to close
+        // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+                closeModule();
+            }
+        });
 
         JPanel p1 = new JPanel();
         BoxLayout boxlayout = new BoxLayout(p1, BoxLayout.Y_AXIS);
@@ -99,9 +106,7 @@ public class Module3Screen implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == goBack) {
-            features.logout();
-            frame.setVisible(false);
-            new MainScreen(lang, isAppProtected);
+            closeModule();
         }
         try {
             if (e.getSource() == function1) {
@@ -133,4 +138,13 @@ public class Module3Screen implements ActionListener {
             e1.printStackTrace();
         }
     }
+    public void closeModule() {
+        System.out.println("fechando modulo");
+        features.logout();
+        featuresFuntion1.logout();
+        featuresFuntion2.logout();
+        frame.setVisible(false);
+        new MainScreen(lang, isAppProtected);
+    }
+
 }

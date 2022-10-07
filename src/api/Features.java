@@ -58,7 +58,6 @@ public class Features {
     }
 
     public boolean login() {
-        System.out.println("login -------");
         getHasp().login(getVendorcode());
         int status = getHasp().getLastError();
         if (status != HaspStatus.HASP_STATUS_OK) {
@@ -69,7 +68,6 @@ public class Features {
     }
 
     public void logout() {
-        System.out.println("logout -------");
         getHasp().logout();
         int status = getHasp().getLastError();
         if (status != HaspStatus.HASP_STATUS_OK) {
