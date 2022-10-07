@@ -10,6 +10,7 @@
             "name": "Launch App",
             "request": "launch",
             "mainClass": "App",
+            "args": "en p",
             "projectName": "DemoModules_b6ba6604"
         },
         {
@@ -34,6 +35,7 @@
             "jdkPath": "${env:JAVA_HOME}/bin",
             "cwd": "${fileDirname}",
             "startupClass": "${fileBasenameNoExtension}",
+            "args": "en p",
             "classpath": [
                 ".",
                 "${fileDirname}"
@@ -58,13 +60,13 @@
             "name": "Launch Current File",
             "request": "launch",
             "args": "en p",
-            "mainClass": "${file} en p"
+            "mainClass": "${file}"
         },
         {
             "type": "java",
             "name": "Launch App",
             "request": "launch",
-            "mainClass": "App en p",
+            "mainClass": "App",
             "args": "en p",
             "projectName": "DemoModules_2ed772c5"
         }

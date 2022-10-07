@@ -108,25 +108,25 @@ public class Module3Screen implements ActionListener {
                 if (featuresFuntion1.login() == false)
                     JOptionPane.showMessageDialog(frame, bundle.getString("module.function.notavailable1")
                             + bundle.getString("module.function.notavailable2"));
-                else if (isAppProtected)
+                else if (isAppProtected) {
                     JOptionPane.showMessageDialog(frame,
                             bundle.getString("module.function.available") + bundle.getString("module3.function1"));
-                else {
-                    JOptionPane.showMessageDialog(frame, bundle.getString("module3.function1"));
                     featuresFuntion1.logout();
-                }
+                } else
+                    JOptionPane.showMessageDialog(frame, bundle.getString("module3.function1"));
+
             }
             if (e.getSource() == function2) {
                 if (featuresFuntion2.login() == false)
                     JOptionPane.showMessageDialog(frame, bundle.getString("module.function.notavailable1")
                             + bundle.getString("module.function.notavailable2"));
-                else if (isAppProtected)
+                else if (isAppProtected) {
                     JOptionPane.showMessageDialog(frame,
                             bundle.getString("module.function.available") + bundle.getString("module3.function2"));
-                else {
+                    featuresFuntion2.logout();
+                } else
                     JOptionPane.showMessageDialog(frame, bundle.getString("module3.function1"));
-                    featuresFuntion1.logout();
-                }
+
             }
         } catch (HeadlessException e1) {
             // TODO Auto-generated catch block

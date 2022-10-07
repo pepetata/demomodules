@@ -8,21 +8,11 @@ public class App {
     ResourceBundle bundle;
 
     public static void main(String[] args) throws Exception {
-        // if (args.length < 2) {
-        //     usage();
-        // }
-        Locale lang = new Locale("us");
-        boolean isAppProtected = true;
-        // Locale lang = getLang(args);
-        // boolean isAppProtected = getMode(args);
-
-        // Features features = new Features();
-        // boolean isFeature10Available = features.isFeatureAvailable("10");
-        // if (isFeature10Available)
-        // System.out.println("Feature 10 is available\n");
-        // else
-        // System.out.println("Feature 10 is NOT available\n");
-        // System.out.println("OK\n");
+        if (args.length < 2) {
+            usage();
+        }
+        Locale lang = getLang(args);
+        boolean isAppProtected = getMode(args);
 
         new MainScreen(lang, isAppProtected);
 
