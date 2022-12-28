@@ -72,10 +72,12 @@ public class MainScreen implements ActionListener {
                 new Module2Screen(lang, isAppProtected);
             if (e.getSource() == mod3)
                 new Module3Screen(lang, isAppProtected);
-            // frame.setVisible(true);
-        } catch (Exception e1) {
+            frame.setVisible(false);
+        } catch (Error e1) {
             // TODO Auto-generated catch block
-            e1.printStackTrace();
+            // System.out.println("MainScreen --> actionPerformed ==============================");
+            // e1.printStackTrace();
+            new MainScreen(lang, isAppProtected);
         }
 
     }

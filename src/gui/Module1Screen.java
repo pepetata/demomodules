@@ -19,13 +19,20 @@ public class Module1Screen implements ActionListener {
     Features features = new Features(moduleFeature);
     Color bg = new Color(0, 179, 0);
 
-    public Module1Screen(Locale lang, boolean isAppProtected) throws Exception {
-        this.lang = lang;
-        this.isAppProtected = isAppProtected;
-        prepareGUI();
+    public Module1Screen(Locale lang, boolean isAppProtected) throws Error {
+        System.out.println("--> starting Module 1");
+        try {
+            this.lang = lang;
+            this.isAppProtected = isAppProtected;
+            prepareGUI();
+        } catch (Error e1) {
+            // TODO Auto-generated catch block
+            System.out.println("Module 1 deu erro  ------------------------------------");
+            e1.printStackTrace();
+        }
     }
 
-    private void prepareGUI() throws Exception {
+    private void prepareGUI() throws Error {
         ResourceBundle bundle = ResourceBundle.getBundle("resources.messages", lang);
         boolean isFeatureAvailable = isAppProtected ? features.login() : true;
 

@@ -14,7 +14,13 @@ public class App {
         Locale lang = getLang(args);
         boolean isAppProtected = getMode(args);
 
+        try { 
         new MainScreen(lang, isAppProtected);
+    } catch (Exception e1) {
+        // TODO Auto-generated catch block
+        System.out.println("deu erro caraca ==============================");
+        e1.printStackTrace();
+    }
 
     }
 

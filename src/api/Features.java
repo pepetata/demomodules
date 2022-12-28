@@ -7,27 +7,25 @@ import org.jdom2.*;
 import org.jdom2.input.SAXBuilder;
 
 import Aladdin.Hasp;
-import Aladdin.HaspTime;
 import Aladdin.HaspStatus;
-import Aladdin.HaspApiVersion;
 
 public class Features {
     // private static final String productID = "1000";
 
     private static final String vendorCode = new String(
-            "AzIceaqfA1hX5wS+M8cGnYh5ceevUnOZIzJBbXFD6dgf3tBkb9cvUF/Tkd/iKu2fsg9wAysYKw7RMA" +
-                    "sVvIp4KcXle/v1RaXrLVnNBJ2H2DmrbUMOZbQUFXe698qmJsqNpLXRA367xpZ54i8kC5DTXwDhfxWT" +
-                    "OZrBrh5sRKHcoVLumztIQjgWh37AzmSd1bLOfUGI0xjAL9zJWO3fRaeB0NS2KlmoKaVT5Y04zZEc06" +
-                    "waU2r6AU2Dc4uipJqJmObqKM+tfNKAS0rZr5IudRiC7pUwnmtaHRe5fgSI8M7yvypvm+13Wm4Gwd4V" +
-                    "nYiZvSxf8ImN3ZOG9wEzfyMIlH2+rKPUVHI+igsqla0Wd9m7ZUR9vFotj1uYV0OzG7hX0+huN2E/Id" +
-                    "gLDjbiapj1e2fKHrMmGFaIvI6xzzJIQJF9GiRZ7+0jNFLKSyzX/K3JAyFrIPObfwM+y+zAgE1sWcZ1" +
-                    "YnuBhICyRHBhaJDKIZL8MywrEfB2yF+R3k9wFG1oN48gSLyfrfEKuB/qgNp+BeTruWUk0AwRE9XVMU" +
-                    "uRbjpxa4YA67SKunFEgFGgUfHBeHJTivvUl0u4Dki1UKAT973P+nXy2O0u239If/kRpNUVhMg8kpk7" +
-                    "s8i6Arp7l/705/bLCx4kN5hHHSXIqkiG9tHdeNV8VYo5+72hgaCx3/uVoVLmtvxbOIvo120uTJbuLV" +
-                    "TvT8KtsOlb3DxwUrwLzaEMoAQAFk6Q9bNipHxfkRQER4kR7IYTMzSoW5mxh3H9O8Ge5BqVeYMEW36q" +
-                    "9wnOYfxOLNw6yQMf8f9sJN4KhZty02xm707S7VEfJJ1KNq7b5pP/3RjE0IKtB2gE6vAPRvRLzEohu0" +
-                    "m7q1aUp8wAvSiqjZy7FLaTtLEApXYvLvz6PEJdj4TegCZugj7c8bIOEqLXmloZ6EgVnjQ7/ttys7VF" +
-                    "ITB3mazzFiyQuKf4J6+b/a/Y");
+        "7QLOrS9a/S+MIJaFuRS+bVKFlfcfDnyXhcVyePiUDpdtzzCAzL+jmQO2t1cMFMQuroQh9bCM8Bkx6/Lo" + 
+        "tziQhp1PfdLZOsa7ZKYLFtRbV07EImnGm0+auR/eZtucPtOfY8v+F+jY2um5EFdGRods4/6MesejkUy3" + 
+        "wKLi/ZLmAI4aIj9ERYYJVwjRK76SRa8MMvyOUwjInsxIW701JbDn7W+Zce1eSsVQIo1WoDofejgasx4L" + 
+        "Yduf5+cI9GPOiLMZCBFmalIGcBnQrGOOboVUyqFwVmPxFM7nGX3ECkJ9R9pp58o2imMnkJ1VLRxlGzmD" + 
+        "+5XTQo01FfUSyCChiWiCcduahRlc1cTT1xzcCwpu8FN/xyZjYVU+PDgWyO5nbG1fw3A4Bv9gYhcxqK6X" + 
+        "p9aHqmk4f29xGFrqZcT7Ak4TeW0QXheye2oqjsFLFNmHBHhbO0QpKn79NpaiVts9G/CVuGELXY8UMHpC" + 
+        "GxqWPXeGB5XL01TQMHsFsmKxdA2wtw3jgDWq2/7QpI3dPcbQdsORhllcMH0gTpRqBEPcYeKbRkZXnetc" + 
+        "yX53USINhVeS40wfKat5leEJ1DupBzCyyFaqcHEYwd5mhlyz5fGrs/dDE5nwCOXzXrWjAyx+PHIC7iEp" + 
+        "E1687ePIuY4sSpB/pbigz+jHCJ4S0c1rbLrsdkll03ewdjB1+6/5e8TxoP4eeC1+gD/s1m2rXlo6Rh8h" + 
+        "4g3wZhUNyJW0Yp8yC8cKayJkK807I49JIfR6+Lq/TMoGwqbjO2r17+4IQK91ZA4/qFw5+7vLmfTC/Y87" + 
+        "WGRaVXVqIAu6rEsNm3n4FYjGC/xRvj/vgvJZbQxzs9aEDtzb80hnBIcjA0PFEnAKAZpLRpfj2wDXLiuY" + 
+        "3xIyhT2OMtmn3x1m3+czgX2IIowYoWOsnsZjNNc35yTkWPGGgLSH9391zwuYhvNGJkXTVnYFh9zEJDdz" + 
+        "fncvArvCrRYw2IUV6AmBjw==");
 
     private static final String scope1 = new String(
             "<haspscope />\n");
@@ -71,12 +69,11 @@ public class Features {
         getHasp().logout();
         int status = getHasp().getLastError();
         if (status != HaspStatus.HASP_STATUS_OK) {
-            System.out.println("Error to logout: " + status);
+            // System.out.println("Error to logout: " + status);
             return;
         }
         return;
     }
-
 
     public boolean isFeatureAvailable(final boolean isAppProtected, final String feature)
             throws JDOMException, IOException {
@@ -108,7 +105,6 @@ public class Features {
                 }
             }
         }
-
         return available;
     }
 

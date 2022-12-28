@@ -1,0 +1,43 @@
+/*
+ * Features:
+ *      Feature 1000 - DemoModules (protected App)
+ * 
+ *      Feature 1100 - Module 1 - verde
+ *      Feature 1200 - Module 2 - azul
+ *      Feature 1300 - Module 3 - vermelho
+ * 
+ *      Feature 1310 - Function 1 in Module 3
+ *      Feature 1320 - Function 2 in Module 3
+ * 
+ * Products:
+ *      Module Demo Application
+ *      	DemoModules
+ *
+ *		Evaluation 1005
+ *      	DemoModules
+ * 			Module 1 - Only 3 execuctions
+ * 			Module 1 - Only 2 execuctions
+ * 			Module 1 - Only 1 execuctions
+ *      Bronze	1010
+ *			DemoModules
+ *			Module 1
+ *			Module 2
+ *			Module 3 - Only 2 execuctions
+ *
+ *      Silver	1020
+ *			DemoModules
+ *			Module 1
+ *			Module 2
+ *			Module 3
+ *			Function 1 in Module 3 - Only 2 execuctions
+ *			Function 2 in Module 3 - Only 1 execuctions
+ *	
+ *      Gold	1030
+ *			DemoModules
+ *			Module 1
+ *			Module 2
+ *			Module 3 
+ *			Function 1 in Module 3 
+ *			Function 2 in Module 3 
+ *
+ */

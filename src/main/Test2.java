@@ -3,12 +3,10 @@ package main;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.BoxLayout;
-import javax.swing.Box;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import java.awt.Insets;
-import java.awt.Dimension;
 
 public class Test2 {
 

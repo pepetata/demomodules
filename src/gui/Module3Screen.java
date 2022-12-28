@@ -2,13 +2,10 @@ package gui;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.io.IOException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-
-import org.jdom2.JDOMException;
 
 import api.Features;
 
@@ -29,13 +26,20 @@ public class Module3Screen implements ActionListener {
     Features featuresFuntion2 = new Features(function2Feature);
     Color bg = new Color(255, 204, 128);
 
-    public Module3Screen(Locale lang, boolean isAppProtected) throws Exception {
-        this.lang = lang;
-        this.isAppProtected = isAppProtected;
-        prepareGUI();
+    public Module3Screen(Locale lang, boolean isAppProtected) throws Error {
+        System.out.println("--> starting Module 3");
+        try {
+            this.lang = lang;
+            this.isAppProtected = isAppProtected;
+            prepareGUI();
+        } catch (Error e1) {
+            // TODO Auto-generated catch block
+            System.out.println("Module 3 deu erro  ------------------------------------");
+            e1.printStackTrace();
+        }
     }
 
-    private void prepareGUI() throws JDOMException, IOException {
+    private void prepareGUI() throws Error {
         bundle = ResourceBundle.getBundle("resources.messages", lang);
         boolean isFeatureAvailable = isAppProtected ? features.login() : true;
 
@@ -110,34 +114,34 @@ public class Module3Screen implements ActionListener {
         }
         try {
             if (e.getSource() == function1) {
-                if (featuresFuntion1.login() == false)
+                if (isAppProtected == false)
+                    JOptionPane.showMessageDialog(frame, bundle.getString("module3.function1"));
+                else if (featuresFuntion1.login() == false)
                     JOptionPane.showMessageDialog(frame, bundle.getString("module.function.notavailable1")
                             + bundle.getString("module.function.notavailable2"));
-                else if (isAppProtected) {
+                else
                     JOptionPane.showMessageDialog(frame,
                             bundle.getString("module.function.available") + bundle.getString("module3.function1"));
-                    featuresFuntion1.logout();
-                } else
-                    JOptionPane.showMessageDialog(frame, bundle.getString("module3.function1"));
-
+                featuresFuntion1.logout();
             }
+
             if (e.getSource() == function2) {
-                if (featuresFuntion2.login() == false)
+                if (isAppProtected == false)
+                    JOptionPane.showMessageDialog(frame, bundle.getString("module3.function2"));
+                else if (featuresFuntion1.login() == false)
                     JOptionPane.showMessageDialog(frame, bundle.getString("module.function.notavailable1")
                             + bundle.getString("module.function.notavailable2"));
-                else if (isAppProtected) {
+                else
                     JOptionPane.showMessageDialog(frame,
                             bundle.getString("module.function.available") + bundle.getString("module3.function2"));
-                    featuresFuntion2.logout();
-                } else
-                    JOptionPane.showMessageDialog(frame, bundle.getString("module3.function1"));
-
+                featuresFuntion2.logout();
             }
         } catch (HeadlessException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
     }
+
     public void closeModule() {
         System.out.println("fechando modulo");
         features.logout();

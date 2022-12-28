@@ -10,6 +10,14 @@
  *      Feature 1320 - Function 2 in Module 3
  * 
  * Products:
+ *      Module Demo Application
+ *      	DemoModules
+ *
+ *		Evaluation 1005
+ *      	DemoModules
+ * 			Module 1 - Only 3 execuctions
+ * 			Module 1 - Only 2 execuctions
+ * 			Module 1 - Only 1 execuctions
  *      Bronze	1010
  *			DemoModules
  *			Module 1
