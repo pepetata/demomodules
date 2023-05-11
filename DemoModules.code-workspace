@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"src",
+			"resources"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": {
+			"include": [
+				"lib/**/*.jar",
+				"hasp-srm-api.jar",
+				"jdom-2.0.6.1.jar"
+			],
+			"exclude": [
+				"c:\\Users\\t0275593\\Documents\\Thales\\Sentinel LDK 8.4\\Samples\\Runtime\\Java\\hasp-srm-demo.jar",
+				"c:\\Program Files (x86)\\Thales\\Sentinel LDK\\API\\Runtime\\Java\\hasp-srm-api.jar"
+			]
+		},
+		"git.autorefresh": false
+	}
+}

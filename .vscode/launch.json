@@ -1,0 +1,82 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "vmArgs": "-Djava.library.path=lib",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "args": "en p",
+            "projectName": "DemoModules_GCBZZ_789332ab"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "args": "en p",
+            "projectName": "DemoModules_b6ba6604"
+        },
+        {
+            "type": "java",
+            "name": "Launch swingBoxLayoutAxis",
+            "request": "launch",
+            "mainClass": "main.swingBoxLayoutAxis",
+            "projectName": "DemoModules_2ed772c5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test2",
+            "request": "launch",
+            "mainClass": "main.Test2",
+            "projectName": "DemoModules_2ed772c5"
+        },
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "args": "en p",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "args": "en p",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "args": "en p",
+            "projectName": "DemoModules_2ed772c5"
+        }
+    ]
+}

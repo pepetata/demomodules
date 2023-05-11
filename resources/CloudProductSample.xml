@@ -1,0 +1,999 @@
+<product>
+	<productName>SampleProduct</productName>
+	<baseProductId>0</baseProductId>
+	<productIdentifier>2</productIdentifier>
+	<enforcementId>2</enforcementId>
+	<lifeCycleStage>COMMIT</lifeCycleStage>
+	<rehost>LEAVE_AS_IS</rehost>
+	<productDescription>
+	</productDescription>
+	<refId1>
+	</refId1>
+	<refId2>
+	</refId2>
+	<enabled>true</enabled>
+	<deployed>false</deployed>
+	<version>Cloud</version>
+	<productFeatureRef>
+		<featureId>4</featureId>
+		<actionName>NONE</actionName>
+		<productFeatureLicenseModel>
+			<actionName>NONE</actionName>
+			<licenseModel>
+				<licenseModelId>8</licenseModelId>
+				<licenseModelName>Postpaid</licenseModelName>
+				<licenseType>0</licenseType>
+				<lmAttribute>
+					<attribute>
+						<attributeId>32</attributeId>
+						<attributeName>KEEP_ALIVE_TIME</attributeName>
+						<attributeType>3</attributeType>
+						<attributeDefaultValue>
+						</attributeDefaultValue>
+						<displayOrder>5</displayOrder>
+						<attributeLevel>1</attributeLevel>
+						<associatedLockCriteria>
+						</associatedLockCriteria>
+						<associatedLockCriteriaValue>
+						</associatedLockCriteriaValue>
+						<endUserPermission>0</endUserPermission>
+						<parameterGroupName>Deployment Attibute
+						</parameterGroupName>
+						<parameterSubGroupName>Deployment Attibute
+						</parameterSubGroupName>
+						<isvPermission>WRITE</isvPermission>
+						<nullable>false</nullable>
+						<saotAllowed>true</saotAllowed>
+					</attribute>
+					<attributeValue>30</attributeValue>
+					<saot>false</saot>
+					<actionName>NONE</actionName>
+				</lmAttribute>
+				<lmAttribute>
+					<attribute>
+						<attributeId>30</attributeId>
+						<attributeName>DISCONNECTED_TIME</attributeName>
+						<attributeType>3</attributeType>
+						<attributeDefaultValue>
+						</attributeDefaultValue>
+						<displayOrder>3</displayOrder>
+						<attributeLevel>1</attributeLevel>
+						<associatedLockCriteria>
+						</associatedLockCriteria>
+						<associatedLockCriteriaValue>
+						</associatedLockCriteriaValue>
+						<endUserPermission>0</endUserPermission>
+						<parameterGroupName>Deployment Attibute
+						</parameterGroupName>
+						<parameterSubGroupName>Deployment Attibute
+						</parameterSubGroupName>
+						<isvPermission>WRITE</isvPermission>
+						<nullable>false</nullable>
+						<saotAllowed>true</saotAllowed>
+					</attribute>
+					<attributeValue>1</attributeValue>
+					<saot>false</saot>
+					<actionName>NONE</actionName>
+				</lmAttribute>
+				<lmAttribute>
+					<attribute>
+						<attributeId>21</attributeId>
+						<attributeName>END_DATE</attributeName>
+						<attributeType>5</attributeType>
+						<attributeDefaultValue>
+						</attributeDefaultValue>
+						<displayOrder>2</displayOrder>
+						<attributeLevel>1</attributeLevel>
+						<associatedLockCriteria>
+						</associatedLockCriteria>
+						<associatedLockCriteriaValue>
+						</associatedLockCriteriaValue>
+						<endUserPermission>0</endUserPermission>
+						<parameterGroupName>Time</parameterGroupName>
+						<parameterSubGroupName>License Validity
+						</parameterSubGroupName>
+						<isvPermission>WRITE</isvPermission>
+						<nullable>false</nullable>
+						<saotAllowed>true</saotAllowed>
+					</attribute>
+					<attributeValue>2020-01-01 13:00</attributeValue>
+					<saot>false</saot>
+					<actionName>NONE</actionName>
+				</lmAttribute>
+				<lmAttribute>
+					<attribute>
+						<attributeId>34</attributeId>
+						<attributeName>VENDOR_ATTRIBUTE</attributeName>
+						<attributeType>1</attributeType>
+						<attributeDefaultValue>
+						</attributeDefaultValue>
+						<displayOrder>5</displayOrder>
+						<attributeLevel>1</attributeLevel>
+						<associatedLockCriteria>
+						</associatedLockCriteria>
+						<associatedLockCriteriaValue>
+						</associatedLockCriteriaValue>
+						<endUserPermission>0</endUserPermission>
+						<parameterGroupName>Vendor Attribute</parameterGroupName>
+						<parameterSubGroupName>Vendor Attribute
+						</parameterSubGroupName>
+						<isvPermission>WRITE</isvPermission>
+						<nullable>false</nullable>
+						<saotAllowed>true</saotAllowed>
+					</attribute>
+					<attributeValue>
+					</attributeValue>
+					<saot>false</saot>
+					<actionName>NONE</actionName>
+				</lmAttribute>
+				<lmAttribute>
+					<attribute>
+						<attributeId>31</attributeId>
+						<attributeName>DEPLOYMENT_TYPE</attributeName>
+						<attributeType>7</attributeType>
+						<attributeValueChoice>
+							<valueOption>On-Premise</valueOption>
+							<valueOption>Cloud</valueOption>
+							<valueOption>Cloud &amp; On-Premise</valueOption>
+</attributeValueChoice>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>4</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>03</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>25</attributeId>
+<attributeName>LICENSE_TYPE</attributeName>
+<attributeType>1</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>1</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>UserID</parameterGroupName>
+<parameterSubGroupName>UserID</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>33</attributeId>
+<attributeName>REFRESH_PERIOD</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>80</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>20</attributeId>
+<attributeName>START_DATE</attributeName>
+<attributeType>2</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>1</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Time</parameterGroupName>
+<parameterSubGroupName>License Validity</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2012-11-20 00:00</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>22</attributeId>
+<attributeName>USAGE_TYPE</attributeName>
+<attributeType>7</attributeType>
+<attributeValueChoice>
+<valueOption>Time Based</valueOption>
+<valueOption>Count Based</valueOption>
+</attributeValueChoice>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>4</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Usage Type</parameterGroupName>
+<parameterSubGroupName>Usage Type</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>1</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+</licenseModel>
+</productFeatureLicenseModel>
+<lmStatus>DEFINED</lmStatus>
+<excludable>false</excludable>
+<featureName>Division</featureName>
+<featureIdentifier>4</featureIdentifier>
+<featureDescription>
+</featureDescription>
+</productFeatureRef>
+<productFeatureRef>
+<featureId>3</featureId>
+<actionName>NONE</actionName>
+<productFeatureLicenseModel>
+<actionName>NONE</actionName>
+<licenseModel>
+<licenseModelId>8</licenseModelId>
+<licenseModelName>Postpaid</licenseModelName>
+<licenseType>0</licenseType>
+<lmAttribute>
+<attribute>
+<attributeId>33</attributeId>
+<attributeName>REFRESH_PERIOD</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>80</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>20</attributeId>
+<attributeName>START_DATE</attributeName>
+<attributeType>2</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>1</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Time</parameterGroupName>
+<parameterSubGroupName>License Validity</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2012-11-20 00:00</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>25</attributeId>
+<attributeName>LICENSE_TYPE</attributeName>
+<attributeType>1</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>1</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>UserID</parameterGroupName>
+<parameterSubGroupName>UserID</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>22</attributeId>
+<attributeName>USAGE_TYPE</attributeName>
+<attributeType>7</attributeType>
+<attributeValueChoice>
+<valueOption>Time Based</valueOption>
+<valueOption>Count Based</valueOption>
+</attributeValueChoice>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>4</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Usage Type</parameterGroupName>
+<parameterSubGroupName>Usage Type</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>1</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>31</attributeId>
+<attributeName>DEPLOYMENT_TYPE</attributeName>
+<attributeType>7</attributeType>
+<attributeValueChoice>
+<valueOption>On-Premise</valueOption>
+<valueOption>Cloud</valueOption>
+<valueOption>Cloud &amp; On-Premise</valueOption>
+</attributeValueChoice>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>4</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>03</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>30</attributeId>
+<attributeName>DISCONNECTED_TIME</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>3</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>1</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>34</attributeId>
+<attributeName>VENDOR_ATTRIBUTE</attributeName>
+<attributeType>1</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Vendor Attribute</parameterGroupName>
+<parameterSubGroupName>Vendor Attribute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>
+</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>21</attributeId>
+<attributeName>END_DATE</attributeName>
+<attributeType>5</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>2</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Time</parameterGroupName>
+<parameterSubGroupName>License Validity</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2020-01-01 13:00</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>32</attributeId>
+<attributeName>KEEP_ALIVE_TIME</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>30</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+</licenseModel>
+</productFeatureLicenseModel>
+<lmStatus>DEFINED</lmStatus>
+<excludable>false</excludable>
+<featureName>Multiplication</featureName>
+<featureIdentifier>3</featureIdentifier>
+<featureDescription>
+</featureDescription>
+</productFeatureRef>
+<productFeatureRef>
+<featureId>2</featureId>
+<actionName>NONE</actionName>
+<productFeatureLicenseModel>
+<actionName>NONE</actionName>
+<licenseModel>
+<licenseModelId>8</licenseModelId>
+<licenseModelName>Postpaid</licenseModelName>
+<licenseType>0</licenseType>
+<lmAttribute>
+<attribute>
+<attributeId>31</attributeId>
+<attributeName>DEPLOYMENT_TYPE</attributeName>
+<attributeType>7</attributeType>
+<attributeValueChoice>
+<valueOption>On-Premise</valueOption>
+<valueOption>Cloud</valueOption>
+<valueOption>Cloud &amp; On-Premise</valueOption>
+</attributeValueChoice>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>4</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>03</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>20</attributeId>
+<attributeName>START_DATE</attributeName>
+<attributeType>2</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>1</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Time</parameterGroupName>
+<parameterSubGroupName>License Validity</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2012-11-20 00:00</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>21</attributeId>
+<attributeName>END_DATE</attributeName>
+<attributeType>5</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>2</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Time</parameterGroupName>
+<parameterSubGroupName>License Validity</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2020-01-01 13:00</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>25</attributeId>
+<attributeName>LICENSE_TYPE</attributeName>
+<attributeType>1</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>1</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>UserID</parameterGroupName>
+<parameterSubGroupName>UserID</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>22</attributeId>
+<attributeName>USAGE_TYPE</attributeName>
+<attributeType>7</attributeType>
+<attributeValueChoice>
+<valueOption>Time Based</valueOption>
+<valueOption>Count Based</valueOption>
+</attributeValueChoice>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>4</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Usage Type</parameterGroupName>
+<parameterSubGroupName>Usage Type</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>1</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>30</attributeId>
+<attributeName>DISCONNECTED_TIME</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>3</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>1</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>33</attributeId>
+<attributeName>REFRESH_PERIOD</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>80</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>32</attributeId>
+<attributeName>KEEP_ALIVE_TIME</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>30</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>34</attributeId>
+<attributeName>VENDOR_ATTRIBUTE</attributeName>
+<attributeType>1</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Vendor Attribute</parameterGroupName>
+<parameterSubGroupName>Vendor Attribute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>
+</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+</licenseModel>
+</productFeatureLicenseModel>
+<lmStatus>DEFINED</lmStatus>
+<excludable>false</excludable>
+<featureName>Subtraction</featureName>
+<featureIdentifier>2</featureIdentifier>
+<featureDescription>
+</featureDescription>
+</productFeatureRef>
+<productFeatureRef>
+<featureId>1</featureId>
+<actionName>NONE</actionName>
+<productFeatureLicenseModel>
+<actionName>NONE</actionName>
+<licenseModel>
+<licenseModelId>8</licenseModelId>
+<licenseModelName>Postpaid</licenseModelName>
+<licenseType>0</licenseType>
+<lmAttribute>
+<attribute>
+<attributeId>30</attributeId>
+<attributeName>DISCONNECTED_TIME</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>3</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>1</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>33</attributeId>
+<attributeName>REFRESH_PERIOD</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>80</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>31</attributeId>
+<attributeName>DEPLOYMENT_TYPE</attributeName>
+<attributeType>7</attributeType>
+<attributeValueChoice>
+<valueOption>On-Premise</valueOption>
+<valueOption>Cloud</valueOption>
+<valueOption>Cloud &amp; On-Premise</valueOption>
+</attributeValueChoice>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>4</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>03</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>25</attributeId>
+<attributeName>LICENSE_TYPE</attributeName>
+<attributeType>1</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>1</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>UserID</parameterGroupName>
+<parameterSubGroupName>UserID</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>21</attributeId>
+<attributeName>END_DATE</attributeName>
+<attributeType>5</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>2</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Time</parameterGroupName>
+<parameterSubGroupName>License Validity</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2020-01-01 13:00</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>32</attributeId>
+<attributeName>KEEP_ALIVE_TIME</attributeName>
+<attributeType>3</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Deployment Attibute</parameterGroupName>
+<parameterSubGroupName>Deployment Attibute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>30</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>20</attributeId>
+<attributeName>START_DATE</attributeName>
+<attributeType>2</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>1</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Time</parameterGroupName>
+<parameterSubGroupName>License Validity</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>2012-11-20 00:00</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>34</attributeId>
+<attributeName>VENDOR_ATTRIBUTE</attributeName>
+<attributeType>1</attributeType>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>5</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Vendor Attribute</parameterGroupName>
+<parameterSubGroupName>Vendor Attribute</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>
+</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+<lmAttribute>
+<attribute>
+<attributeId>22</attributeId>
+<attributeName>USAGE_TYPE</attributeName>
+<attributeType>7</attributeType>
+<attributeValueChoice>
+<valueOption>Time Based</valueOption>
+<valueOption>Count Based</valueOption>
+</attributeValueChoice>
+<attributeDefaultValue>
+</attributeDefaultValue>
+<displayOrder>4</displayOrder>
+<attributeLevel>1</attributeLevel>
+<associatedLockCriteria>
+</associatedLockCriteria>
+<associatedLockCriteriaValue>
+</associatedLockCriteriaValue>
+<endUserPermission>0</endUserPermission>
+<parameterGroupName>Usage Type</parameterGroupName>
+<parameterSubGroupName>Usage Type</parameterSubGroupName>
+<isvPermission>WRITE</isvPermission>
+<nullable>false</nullable>
+<saotAllowed>true</saotAllowed>
+</attribute>
+<attributeValue>1</attributeValue>
+<saot>false</saot>
+<actionName>NONE</actionName>
+</lmAttribute>
+</licenseModel>
+</productFeatureLicenseModel>
+<lmStatus>DEFINED</lmStatus>
+<excludable>false</excludable>
+<featureName>Addition</featureName>
+<featureIdentifier>1</featureIdentifier>
+<featureDescription>
+</featureDescription>
+</productFeatureRef>
+</product>

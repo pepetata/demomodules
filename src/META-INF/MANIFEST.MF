@@ -1,0 +1,2 @@
+Main-Class: App  
+Class-Path: jdom-2.0.6.1.jar

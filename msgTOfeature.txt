@@ -1,0 +1,61 @@
+#this files contain the messages for the GUI
+feature 1000 - featureName
+    main.title=Basic App Demo
+feature 1000 - featureDescription
+    main.title2=This is a Basic Application Demo for Sentinel LDK
+feature 1000 - refId1
+    main.modules=These are the available modules:
+
+
+feature 1001 - featureDescription
+    evaluation.text=This app is for EVALUATION only. You have 30 days to evaluation it. THIS APP CANNOT BE SOLD BY ANYONE ! Please contact www.mywebsite.com for a production version.
+
+
+feature 1100 - featureName
+    main.button.module1=Module 1
+
+
+feature 1200 - featureName
+    main.button.module2=Module 2
+
+
+feature 1300 - featureName
+    main.button.module3=Module 3
+
+
+feature 1310 - featureName
+    module3.button.function1=Function 1
+feature 1310 - featureDescription
+    module3.function1=You are executing Function 1 in Module 3
+
+
+
+feature 1310 - featureName
+    module3.button.function2=Function 2
+feature 1320 - featureDescription
+    module3.function2=You are executing Function 2 in Module 3
+
+module.available=Module available for your license.
+module.notavailable1=Module NOT available for you license.
+module.notavailable2=Please upgrade accessing www.upgrade_my_license.com
+module.function.available=Function available for your license.\n
+module.function.notavailable1=Function NOT available for you license.\n
+module.function.notavailable2=Please upgrade accessing www.upgrade_my_license.com
+
+feature 1100 - featureName
+    module1.title2=Module 1
+
+module1.button.back=Go Back
+
+
+feature 1200 - featureName
+    module2.title2=Module 2
+
+module2.button.back=Go Back
+
+
+feature 1300 - featureName
+    module3.title2=Module 3
+
+
+module3.button.back=Go Back

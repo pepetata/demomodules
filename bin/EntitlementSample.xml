@@ -1,0 +1,33 @@
+<entitlement>
+	<enabled>true</enabled>
+	<action>PRODUCE</action>
+	<partnerId />
+	<partnerEmail />
+	<refId1 />
+	<refId2 />
+	<description />
+	<startDate>2011-09-12</startDate>
+	<endDate>2500-12-31</endDate>
+	<customerId>1</customerId>	
+	<policy>
+		<registrationRequired>DESIRED</registrationRequired>
+	</policy>
+	<entitlementItem>
+		<lineItemType>Product_Key</lineItemType>
+		<numActivationPerProductKey>1</numActivationPerProductKey>
+		<numProductKeys>1</numProductKeys>
+		<vendorId>1</vendorId>
+		<enforcementId>1</enforcementId>
+		<identity>1</identity>
+		<identityCount>1</identityCount >
+		<itemProduct>
+			<productId>1</productId>
+		</itemProduct>
+		<activationAttribute>
+			<attributeName>ACKNOWLEDGEMENT_REQUEST</attributeName>
+			<attributeValue>false</attributeValue>
+		</activationAttribute>
+		<memorySegments>
+		</memorySegments>
+	</entitlementItem>
+</entitlement>

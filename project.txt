@@ -1,0 +1,49 @@
+create .jar:
+    - open the java project
+    - click on the right arrow
+    - select App.java
+    - In the next question, click ok
+    - the jar file is generated
+
+execute Protected jar:
+    cd C:\Users\t0275593\Documents\Thales\Demos_Apps\Modules\DemoModules\
+    java -jar DemoModules.jar en np
+
+
+
+==========================================================================
+The instructions below no longer works:
+
+
+
+
+compilar: (it generates App.class)
+    cd C:\Users\t0275593\Documents\Thales\Demos Apps\Modules\DemoModules
+    dir *.java /s /b > FilesList.txt
+    javac @FilesList.txt -cp src;jdom-2.0.6.1.jar
+
+execute class file:
+    cd C:\Users\t0275593\Documents\Thales\Demos Apps\Modules\DemoModules
+    java -cp src;jdom-2.0.6.1.jar App en np
+
+create .jar:
+    must have the manifest file 
+    cd C:\Users\t0275593\Documents\Thales\Demos Apps\Modules\DemoModules\src
+    jar cfm ../DemoModules.jar META-INF\MANIFEST.MF .   
+    
+execute jar file
+    click on it
+    execute it from command: 
+        cd C:\Users\t0275593\Documents\Thales\Demos Apps\Modules\DemoModules
+        java -jar DemoModules.jar en np
+
+execute Protected jar:
+    cd C:\Users\t0275593\Documents\Thales\Demos Apps\Modules\DemoModules\protected
+    java -jar DemoModulesProtected.jar en np
+
+
+
+
+
+CHANGES:
+23-03-03 - added messages_es_MX.properties to be used to demo to SW Ganadero
